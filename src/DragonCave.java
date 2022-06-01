@@ -16,9 +16,18 @@ public class DragonCave {
                 new InputStreamReader(System.in));
 
         // Reading data using readLine
-        String name = reader.readLine();
+        String response = reader.readLine();
 
-        // Printing the read line
-        System.out.println(name);
+        // Printing the read line1
+        if (response.compareTo("1")==0)
+        {
+            System.out.println("You approach cave.." +
+                    "Its dark and spooky..."+"A large dragon jumps out in front of ou ! He opens his jaws and .." +
+                    "Gobbles you down in one bite!"
+            );
+
+        } else if (response.compareTo("2")==0)
+        { System.out.println("Good"); }
+
     }
 }
