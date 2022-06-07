@@ -12,12 +12,16 @@ public class DragonCave {
                 "and will eat you on sight ");
         System.out.println("Which cave will you go ito? (1 or 2)? ");
         // Enter data using BufferReader
+        String response="";
         BufferedReader reader = new BufferedReader(
                 new InputStreamReader(System.in));
-
-        // Reading data using readLine
-        String response = reader.readLine();
-
+        try {
+            // Reading data using readLine
+             response = reader.readLine();
+        } catch (Exception e)
+        {
+            System.out.println("Exception caught");
+        }
         // Printing the read line1
         if (response.compareTo("1")==0)
         {
