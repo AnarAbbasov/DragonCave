@@ -15,12 +15,18 @@ public class DragonCave {
 
       DragonGame mygame= new DragonGame();
        System.out.println(mygame.printMsg());
-       mygame.get_input();
+        BufferedReader reader = new BufferedReader(
+        new InputStreamReader(System.in));
+
+        String  response=reader.readLine();
+        mygame.get_input(response);
+
+       mygame.get_input(response);
       System.out.println(mygame.playGame());
 
 
 
-        // Printing the read line1
+
 
 
     }

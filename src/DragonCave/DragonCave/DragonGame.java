@@ -15,19 +15,18 @@ public class DragonGame
                 "and will eat you on sight " + "\n"+ " Which cave will you go ito? (1 or 2)?");
     }
 
-  public  String get_input()
+  public  String get_input(String response)
     {
-        BufferedReader reader = new BufferedReader(
-                new InputStreamReader(System.in));
+
         try {
             // Reading data using readLine
-            response=reader.readLine();
-            return response;
+            Integer.valueOf(response);
+
         }   catch (Exception e)
         {
             return("Exception caught");
         }
-
+        return response;
 
     }
 
